@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "815476620516",
+    "project_id": "shadows-of-chaos",
+    "storage_bucket": "shadows-of-chaos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815476620516:android:986096bc9798571e0b00f1",
+        "android_client_info": {
+          "package_name": "com.example.shadows-of-chaos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815476620516-s26723ui3li5kuos2ce3vcg33rq5o0mu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3lwUsUVaqi2eNcsRdC_5gP4YaNSA6-5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815476620516-s26723ui3li5kuos2ce3vcg33rq5o0mu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "815476620516-7jlgku4kf1rhklrog9vjtq1mo6gicu5m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.shadowsBeta01"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
