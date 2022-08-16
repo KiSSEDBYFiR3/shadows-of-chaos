@@ -6,5 +6,6 @@
  
  Right now app in its early development stage:
  Building architecture layers, injecting basic dependencies (di container will be added later) and adding basic logic
- No UI as of yet
+
+No UI as of yet
  
