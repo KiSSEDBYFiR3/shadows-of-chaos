@@ -1,4 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shadows_beta_01/feature/domain/entities/base_entity.dart';
 
 class NovelDataModel extends BaseEntity {
@@ -10,15 +9,13 @@ class NovelDataModel extends BaseEntity {
     required super.scenaryAdress,
   });
 
-  factory NovelDataModel.fromSnapshot(DocumentSnapshot documentSnapshot) {
+  factory NovelDataModel.fromJson(Map<String, dynamic> json) {
     return NovelDataModel(
-      characterImageAdress: documentSnapshot.get('characterImage') ?? '',
-      characterName: documentSnapshot.get('currentCharacter') ?? '',
-      choisesList: documentSnapshot.get('choises') ?? [],
-      message: (documentSnapshot.get('message') as List<dynamic>)
-          .map((e) => e as String)
-          .toList(),
-      scenaryAdress: documentSnapshot.get('backgroundImage'),
+      characterImageAdress: json['characterImage'],
+      scenaryAdress: json['backgroundImage'],
+      characterName: json['characterName'],
+      choisesList: json['choisesList'] as List<Map<String, dynamic>>,
+      message: json['message'],
     );
   }
 }

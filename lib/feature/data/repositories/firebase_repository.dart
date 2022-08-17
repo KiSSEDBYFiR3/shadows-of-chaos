@@ -1,9 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:shadows_beta_01/feature/data/datasourses/firebase_remote_data_sourse.dart';
-import 'package:shadows_beta_01/feature/domain/entities/base_entity.dart';
+import 'package:shadows_beta_01/feature/data/datasourses/remote/firebase_remote_data_sourse.dart';
 import 'package:shadows_beta_01/feature/domain/repository/firebase_repository.dart';
-
-import '../../domain/entities/novel_saves_entity.dart';
 
 class FirebaseRepeository implements IFirebaseRepository {
   final IFirebaseRemoteDataSource remoteDataSource;
@@ -26,12 +23,15 @@ class FirebaseRepeository implements IFirebaseRepository {
   }
 
   @override
-  Future<List<BaseEntity>> getNovelData(String uid) async {
-    return remoteDataSource.getNovelData(uid: uid);
+  Future<List<String>> getNovelData(
+      {required String uid,
+      required String page,
+      required String level}) async {
+    return remoteDataSource.getNovelData(uid: uid, page: page);
   }
 
   @override
-  Future<NovelSavesEntity> getSaves(String uid) async {
+  Future<String> getSaves(String uid) async {
     return remoteDataSource.novelSavesGet(uid);
   }
 
@@ -41,12 +41,14 @@ class FirebaseRepeository implements IFirebaseRepository {
       required int messageNum,
       required String route,
       required int pageNum,
-      required String level}) async {
+      required String level,
+      required String uid}) async {
     return remoteDataSource.novelSavesUpdate(
         level: level,
         lastSave: lastSave,
         messageNum: messageNum,
         route: route,
-        pageNum: pageNum);
+        pageNum: pageNum,
+        uid: uid);
   }
 }

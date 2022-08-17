@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
 
-// Сущность для работы с сохранениями
-// Хранит в себе ссылку на текущий уровень, рут, последнюю сцену и сообщение
+// Entity for game saves
+// Stores current level, game route, laste scene and last message number
 
 class NovelSavesEntity extends Equatable {
   final int messageNum;

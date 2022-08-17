@@ -1,5 +1,7 @@
-flutter/ephemeral/
-
+flutter/
+runner/
+.gitignor
+CMakeLists.txt
 # Visual Studio user-specific files.
 *.suo
 *.user
