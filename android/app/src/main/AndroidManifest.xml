@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.shadows-of-chaos">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.shadows_beta_01">
    <application
         android:label="shadows-of-chaos"
         android:name="${applicationName}"
