@@ -1,9 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:shadows_beta_01/core/usecases/update_novel_saves_usecase.dart';
 import 'package:shadows_beta_01/feature/domain/repository/repository.dart';
 
 // Sending local saves to Firestore
-class UpdateLocalSaves implements IUpdateLocalSaves {
+class UpdateLocalSaves {
   final ILocalRepository novelRepository;
   UpdateLocalSaves({required this.novelRepository});
 

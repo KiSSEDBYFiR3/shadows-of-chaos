@@ -1,7 +1,6 @@
-import 'package:shadows_beta_01/core/usecases/get_saves_from_server_usecase.dart';
 import 'package:shadows_beta_01/feature/domain/repository/repository.dart';
 
-class GetSavesFromServer implements IGetRemoteSaves {
+class GetSavesFromServer {
   ILocalRepository novelRepository;
   GetSavesFromServer(this.novelRepository);
   @override
