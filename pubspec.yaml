@@ -18,7 +18,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.17.0 <3.0.0"
+  sdk: ">=2.19.0 <4.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -49,8 +49,11 @@ dependencies:
   shared_preferences: ^2.0.15
   is_first_run: ^1.0.0
   font_awesome_flutter: ^10.1.0
+  auto_route: ^6.0.1
 
 dev_dependencies:
+  auto_route_generator: ^6.0.0
+  build_runner: ^2.3.3
   flutter_test:
     sdk: flutter
 
@@ -60,6 +63,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
